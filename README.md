@@ -1,6 +1,6 @@
 # Thinkpad-X1C4-Hackintosh
 Thinpad X1 Carbon 4th(2016) Hackintosh EFI
-- OpenCore: 0.6.2
+- OpenCore: ......待学习整理，最新版0.7.8
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
 - HardwareInfo: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_4th_Gen/ThinkPad_X1_Carbon_4th_Gen_Spec.PDF
  - IGPU: HD Graphics 520
