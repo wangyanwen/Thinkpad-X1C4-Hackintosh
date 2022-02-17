@@ -41,4 +41,4 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - https://github.com/OpenIntelWireless/IntelBluetoothFirmware, help fix buletooth
 - https://github.com/OpenIntelWireless/HeliPort, help choose wifi, client for itlwm
 - https://github.com/stevezhengshiqi/one-key-cpufriend, add cpu frequency control, current setting keep low frequency to 800hz (
-suitable for me that condider more about battery life for laptop),  can use [Inter Power Gadget Tool](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html) to monitor if your settings works
+suitable for me that condider more about battery life for laptop),  can use [Intel Power Gadget Tool](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html) to monitor if your settings works
