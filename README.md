@@ -4,8 +4,11 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
 - HardwareInfo: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_4th_Gen/ThinkPad_X1_Carbon_4th_Gen_Spec.PDF
  - IGPU: HD Graphics 520
- - CPU: Skylake, Intel Core i5-6200U
- - Audio: Conexant CX20753/4
+ - CPU: Skylake, Intel Core i7-6600U
+ - Disk: MZNLN512HMJP-000L7 Samsung 512GB SATA III 6Gb/s PM871a M.2 Solid State Drive
+ - 主板芯片: Mobile 6th/7th Generation Intel(R) Processor Family I/O LPC Contraller(U Premium SKU)-9D48
+ - Audio: Conexant CX20753/4;Intel Skylake HDMI
+ - Network: Intel 18260NGW WiGig(Douglas Peak)
 
 # Summary
 - [x] Audio (AppleALC alc-layout-id: 14)
