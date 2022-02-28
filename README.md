@@ -10,7 +10,7 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
  - Audio: Conexant CX20753/4;Intel Skylake HDMI
  - Network: Intel 18260NGW WiGig(Douglas Peak)
 
-联想驱动管理硬件检测报告
+##联想驱动管理硬件检测报告
 ================================================================
 -当前操作系统		Windows 10 64位
 -主机编号		20FBA01MCDR90M7BDF
