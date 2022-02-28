@@ -12,10 +12,10 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 
 联想驱动管理硬件检测报告
 ================================================================
-当前操作系统		Windows 10 64位
-主机编号		20FBA01MCDR90M7BDF
-CPU系列			第六代智能英特尔酷睿i7
-CPU型号			i7-6600U
+-当前操作系统		Windows 10 64位
+-主机编号		20FBA01MCDR90M7BDF
+-CPU系列			第六代智能英特尔酷睿i7
+-CPU型号			i7-6600U
 CPU主频			2.6GHz
 最高睿频		3.4GHz
 CPU缓存			4MB
