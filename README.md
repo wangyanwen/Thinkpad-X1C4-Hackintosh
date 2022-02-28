@@ -8,7 +8,7 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
  - Disk: MZNLN512HMJP-000L7 Samsung 512GB SATA III 6Gb/s PM871a M.2 Solid State Drive
  - 主板芯片: Mobile 6th/7th Generation Intel(R) Processor Family I/O LPC Contraller(U Premium SKU)-9D48
  - Audio: Conexant CX20753/4;Intel Skylake HDMI
- - Network: Intel 18260NGW WiGig(Douglas Peak)
+ - Network: Intel Ethernet Connection I219-LM（有线）,Intel 18260NGW WiGig(Douglas Peak) Network Adapter（无线）
 
 ## 联想驱动管理硬件检测报告
 ================================================================
