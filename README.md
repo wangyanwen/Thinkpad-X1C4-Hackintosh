@@ -75,7 +75,9 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [ ] mini DP may cause build-in display black screen
 
 # Update
-。。。。。。
+- 2022.03.08 启动的时候 若提示【oc grabbed zero systm-id for sb. this is not allowed halting on critlcal error 】
+
+             基本就是【Misc】-->【security】下的【SecureBootModel 】的问题，默认【Default 】可以改为【Disabled 】或其他。
 
 # Thanks
 - https://apple.sqlsec.com/ 国光的黑苹果安装教程：手把手教你配置 OpenCore
