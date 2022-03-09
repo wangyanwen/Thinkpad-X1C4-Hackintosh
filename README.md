@@ -75,15 +75,15 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
-- 2022.03.09 启动报错 提示 "OC：Driver HfsPlus.efi at 1 cannot be loaded - Unsupported!"
-  搜索判断是HfsPlus.efi文件错误，需重装下载。
-  验证了下，在U盘的HfsPlus.efi文件大小显示176.2KB，实际正常的大小应该是37KB。 （ https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi )
+- 2022.03.09 启动报错 提示 "OC：Driver HfsPlus.efi at 1 cannot be loaded - Unsupported!"  
+  搜索判断是HfsPlus.efi文件错误，需重装下载。  
+  验证了下，在U盘的HfsPlus.efi文件大小显示176.2KB，实际正常的大小应该是37KB。 （ https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi )  
 
 - 2022.03.08 启动的时候报错 提示 "oc grabbed zero systm-id for sb. this is not allowed halting on critlcal error" 
-  国光教程：基本就是【Misc】-->【security】下的【SecureBootModel 】的问题，默认【Default 】可以改为【Disabled 】或其他。
-            https://apple.sqlsec.com/9-%E5%B8%B8%E8%A7%81QA/#reloaded 十、常见 QA 国光的黑苹果安装教程
-  OpenCore教程：High Sierra-Catalina (10.13-10.15):
-                 If your model is not listed below, set to Disabled.
+  国光教程：基本就是【Misc】-->【security】下的【SecureBootModel 】的问题，默认【Default 】可以改为【Disabled 】或其他。  
+            https://apple.sqlsec.com/9-%E5%B8%B8%E8%A7%81QA/#reloaded 十、常见 QA 国光的黑苹果安装教程  
+  OpenCore教程：High Sierra-Catalina (10.13-10.15):  
+                 If your model is not listed below, set to Disabled.  
              https://dortania.github.io/OpenCore-Install-Guide/config.plist/security.html#misc Apple Secure Boot
 
 # Thanks
