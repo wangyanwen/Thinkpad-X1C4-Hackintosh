@@ -66,7 +66,7 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 
 
 # Summary
-- [] Audio (AppleALC alc-layout-id: 14)
+- [] Audio (AppleALC alc-layout-id: 3,14)
 - [] Trackpad\RedPoint multi gestures
 - [] Native IntelWifi (itlwm)
 - [] Native Buletooth
