@@ -76,6 +76,7 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 
 # Update
 - 2022.03.09 启动报错 提示 "OC：Driver HfsPlus.efi at 1 cannot be loaded - Unsupported!"
+
              - 搜索判断是HfsPlus.efi文件错误，需重装下载。
              - 验证了下，在U盘的HfsPlus.efi文件大小显示176.2KB，实际正常的大小应该是37KB。（https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 
