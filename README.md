@@ -75,6 +75,9 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
+- 2022.03.10 启动报错 提示 “Failed to add ACPI SSDT-EC-USBX-LAPTOP.aml - Invalid Parameter”，还包括SSDT-PNLF.aml、SSDT-XOSI.aml文件  
+  先G搜了下，没找到什么对应的。后来看了下ACPI文件夹下的4个文件，发现出问题的3个文件的属性是html文件，没报错的文件属性是data。然后又找教程核对这3个文件，发现大小跟存在U盘里的不一样，估计是这个原因。有点搞不懂当时怎么没下载正确，真是莫名问题。
+
 - 2022.03.09 启动报错 提示 "OC：Driver HfsPlus.efi at 1 cannot be loaded - Unsupported!"  
   搜索判断是HfsPlus.efi文件错误，需重装下载。  
   验证了下，在U盘的HfsPlus.efi文件大小显示176.2KB，实际正常的大小应该是37KB。 （ https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi )  
