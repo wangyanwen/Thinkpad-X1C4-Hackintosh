@@ -1391,16 +1391,6 @@
 				<key>Comment</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>ExFatDxe.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>ExFatDxe.efi</string>
-			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
