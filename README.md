@@ -1,6 +1,6 @@
 # Thinkpad-X1C4-Hackintosh，Model 20FB，2022年3月7日
 Thinpad X1 Carbon 4th(2016) Hackintosh EFI
-- OpenCore: ......**最新版0.7.8**
+- OpenCore: ......**最新版0.7.9**
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
 - HardwareInfo: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_4th_Gen/ThinkPad_X1_Carbon_4th_Gen_Spec.PDF
  - IGPU: HD Graphics 520
