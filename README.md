@@ -1,5 +1,6 @@
 # Thinkpad-X1C4-Hackintosh，Model 20FB，2022年3月7日
 Thinpad X1 Carbon 4th(2016) Hackintosh EFI
+- 还未成功，卡在启动上，找不到u盘文件，疫情被隔离中。
 - OpenCore: ......**最新版0.7.9**
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
 - HardwareInfo: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_4th_Gen/ThinkPad_X1_Carbon_4th_Gen_Spec.PDF
