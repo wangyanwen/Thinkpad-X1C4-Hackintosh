@@ -1,7 +1,9 @@
 # Thinkpad-X1C4-Hackintosh，Model 20FB，2022年3月7日
 Thinpad X1 Carbon 4th(2016) Hackintosh EFI
-- 还未成功，卡在启动上，找不到u盘文件，疫情被隔离中。
-- OpenCore: ......**最新版0.7.9**
+## - 还未成功，卡在启动上，找不到u盘文件，疫情被隔离中。
+继续折腾，哈哈！今天看资料的时候，可能找到前面问题原因了。
+
+- OpenCore: ......**最新版0.8.4**
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
 - HardwareInfo: https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_4th_Gen/ThinkPad_X1_Carbon_4th_Gen_Spec.PDF
  - IGPU: HD Graphics 520
@@ -76,6 +78,8 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
+- 2022.09.30 可能找到了故障原因，为什么启动的时候找不到macOS partition。在OpenCore Install Guider的介绍里，在Configs配置里说到：
+"By default, OpenCore only loads APFS drivers from macOS Big Sur and newer. If you are booting macOS Catalina or earlier, you may need to set a new minimum version/date. Not setting this can result in OpenCore not finding your macOS partition!"
 - 2022.03.10 启动报错 提示 “Failed to add ACPI SSDT-EC-USBX-LAPTOP.aml - Invalid Parameter”，还包括SSDT-PNLF.aml、SSDT-XOSI.aml文件  
   先G搜了下，没找到什么对应的。后来看了下ACPI文件夹下的4个文件，发现出问题的3个文件的属性是html文件，没报错的文件属性是data。然后又找教程核对这3个文件，发现大小跟存在U盘里的不一样，估计是这个原因。有点搞不懂当时怎么没下载正确，真是莫名问题。
 
