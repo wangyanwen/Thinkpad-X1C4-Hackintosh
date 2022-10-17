@@ -77,6 +77,14 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
+- 2022.10.17 日志最后几行显示无线网卡相关kext出错，
+		“29:772 00:057 OCAK: Dependency com.apple.iokit.IO80211Family was not found for kext com.zxystd.AirportItlwm^M
+		 29:863 00:090 OCAK: Vtable patching failed for kext com.zxystd.AirportItlwm^M
+		 29:896 00:033 OC: Prelinked injection AirportItlwm.kext (AirportItlwm.kext) - Invalid Parameter^M
+	     查找相关kext介绍，”Intel AirportItlwm.kext",最后说到要求苹果安全启动功能，应该是这个原因导致无线网卡识别不到。（https://dortania.github.io/OpenCore-Install-Guide/ktext.html#intel）
+    Adds support for a large variety of Intel wireless cards and works natively in recovery thanks to IO80211Family integration
+    Requires macOS 10.13 or newer and requires Apple's Secure Boot to function correctly
+
 - 2022.10.16 特别提醒：需修改安全启动的缺省值，否则安装不成功，会一直循环。
              “ Misc”--> “ Security ”--> “SecureBootModel”将缺省值“Default”改为“Disabled”（https://dortania.github.io/OpenCore-Install-Guide/config.plist/security.html#security-securebootmodel） 
 - 2022.10.16 经过多次试验，我采用windows制作安装U盘的方法不成功（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html”。
