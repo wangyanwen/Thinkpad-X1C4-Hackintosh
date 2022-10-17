@@ -77,20 +77,20 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
-- 2022.10.17 日志最后几行显示无线网卡相关kext出错， 
-		“29:772 00:057 OCAK: Dependency com.apple.iokit.IO80211Family was not found for kext com.zxystd.AirportItlwm 
-		 29:863 00:090 OCAK: Vtable patching failed for kext com.zxystd.AirportItlwm 
-		 29:896 00:033 OC: Prelinked injection AirportItlwm.kext (AirportItlwm.kext) - Invalid Parameter 
+- 2022.10.17 日志最后几行显示无线网卡相关kext出错，  
+		“29:772 00:057 OCAK: Dependency com.apple.iokit.IO80211Family was not found for kext com.zxystd.AirportItlwm  
+		 29:863 00:090 OCAK: Vtable patching failed for kext com.zxystd.AirportItlwm  
+		 29:896 00:033 OC: Prelinked injection AirportItlwm.kext (AirportItlwm.kext) - Invalid Parameter  
 	     查找相关kext介绍，”Intel AirportItlwm.kext",最后说到要求苹果安全启动功能，应该是这个原因导致无线网卡识别不到。（https://dortania.github.io/OpenCore-Install-Guide/ktext.html#intel）
     Adds support for a large variety of Intel wireless cards and works natively in recovery thanks to IO80211Family integration
     Requires macOS 10.13 or newer and requires Apple's Secure Boot to function correctly
 
-- 2022.10.16 特别提醒：需修改安全启动的缺省值，否则安装不成功，会一直循环。 
+- 2022.10.16 特别提醒：需修改安全启动的缺省值，否则安装不成功，会一直循环。  
              “ Misc”--> “ Security ”--> “SecureBootModel”将缺省值“Default”改为“Disabled”（https://dortania.github.io/OpenCore-Install-Guide/config.plist/security.html#security-securebootmodel） 
-- 2022.10.16 经过多次试验，我采用windows制作安装U盘的方法不成功（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html”。 
-采用linux制作方法里面第2种，将BaseSystem.dmg写入创建的苹果分区。
+- 2022.10.16 经过多次试验，我采用windows制作安装U盘的方法不成功（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html”。  
+采用linux制作方法里面第2种，将BaseSystem.dmg写入创建的苹果分区。 
 “run sudo dmg2img -p <the partition number> BaseSystem.dmg /dev/<your 3GB+ partition block> to extract and write the recovery image to the partition disk”（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#method-2-in-case-1-didn-t-work）
-- 2022.09.30 可能找到了故障原因，为什么启动的时候找不到macOS partition。在OpenCore Install Guider的介绍里，在Configs配置里说到： 
+- 2022.09.30 可能找到了故障原因，为什么启动的时候找不到macOS partition。在OpenCore Install Guider的介绍里，在Configs配置里说到：  
 "By default, OpenCore only loads APFS drivers from macOS Big Sur and newer. If you are booting macOS Catalina or earlier, you may need to set a new minimum version/date. Not setting this can result in OpenCore not finding your macOS partition!"(https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#uefi)
 - 2022.03.10 启动报错 提示 “Failed to add ACPI SSDT-EC-USBX-LAPTOP.aml - Invalid Parameter”，还包括SSDT-PNLF.aml、SSDT-XOSI.aml文件  
   先G搜了下，没找到什么对应的。后来看了下ACPI文件夹下的4个文件，发现出问题的3个文件的属性是html文件，没报错的文件属性是data。然后又找教程核对这3个文件，发现大小跟存在U盘里的不一样，估计是这个原因。有点搞不懂当时怎么没下载正确，真是莫名问题。
