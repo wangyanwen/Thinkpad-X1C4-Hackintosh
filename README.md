@@ -1,7 +1,6 @@
 # Thinkpad-X1C4-Hackintosh，Model 20FB，2022年3月7日
 Thinpad X1 Carbon 4th(2016) Hackintosh EFI
-## - 还未成功，卡在启动上，找不到u盘文件，疫情被隔离中。
-继续折腾，哈哈！今天看资料的时候，可能找到前面问题原因了。
+## - 安装基本成功，系统识别不到无线网卡，继续折腾，哈哈！。
 
 - OpenCore: ......**最新版0.8.4**
 - SystemInfo: MacOS Catalina 10.15.7 (19H2)
@@ -78,6 +77,11 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [] mini DP may cause build-in display black screen
 
 # Update
+- 2022.10.16 特别提醒：需修改安全启动的缺省值，否则安装不成功，会一直循环。
+             “ Misc”--> “ Security ”--> “SecureBootModel”将缺省值“Default”改为“Disabled”（https://dortania.github.io/OpenCore-Install-Guide/config.plist/security.html#security-securebootmodel） 
+- 2022.10.16 经过多次试验，我采用windows制作安装U盘的方法不成功（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html”。
+采用linux制作方法里面第2种，将BaseSystem.dmg写入创建的苹果分区。
+“run sudo dmg2img -p <the partition number> BaseSystem.dmg /dev/<your 3GB+ partition block> to extract and write the recovery image to the partition disk”（https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#method-2-in-case-1-didn-t-work）
 - 2022.09.30 可能找到了故障原因，为什么启动的时候找不到macOS partition。在OpenCore Install Guider的介绍里，在Configs配置里说到：
 "By default, OpenCore only loads APFS drivers from macOS Big Sur and newer. If you are booting macOS Catalina or earlier, you may need to set a new minimum version/date. Not setting this can result in OpenCore not finding your macOS partition!"
 - 2022.03.10 启动报错 提示 “Failed to add ACPI SSDT-EC-USBX-LAPTOP.aml - Invalid Parameter”，还包括SSDT-PNLF.aml、SSDT-XOSI.aml文件  
