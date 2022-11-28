@@ -77,6 +77,8 @@
   - [] mini DP may cause build-in display black screen
 
   # Update
+  - 2022.11.28 忘了更新无线网卡的使用方法了，加上了HeliPort.dmg程序，需要连接无线的时候就运行这个程序。（https://openintelwireless.github.io/HeliPort/Installation.html）
+
   - 2022.11.06 更新无线网卡itlwm.kext，加上触控板VoodooRMI.kext、VoodooSMBus.kext，电池状态显示ECEnabler.kext。
   - 2022.10.17 日志最后几行显示无线网卡相关kext出错，  
   		“29:772 00:057 OCAK: Dependency com.apple.iokit.IO80211Family was not found for kext com.zxystd.AirportItlwm  
